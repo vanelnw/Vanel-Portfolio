@@ -1,0 +1,86 @@
+header {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.toolbar {
+  background-color: #3c3a39;
+  width: 375px;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.toolbar span {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.toolbar img {
+  width: 18px;
+  height: 12px;
+  color: #ffffff;
+}
+
+.headline {
+  position: relative;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 120px 24px;
+
+  width: 375px;
+}
+
+.headline .title {
+  color: #ff6b00;
+  font-family: "Crete Round";
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 64px;
+  letter-spacing: 0.37px;
+}
+
+.headline .sub-title {
+  color: #fff5e1;
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.headline p {
+  color: #ffffff;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.headline .socials {
+  display: flex;
+  gap: 20px;
+  padding: 8px;
+}
+
+.socials img {
+  width: 20px;
+  height: 20px;
+
+  color: #ffffff;
+}
+
+.headline .imagebg {
+  width: 220px;
+  height: 240px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
