@@ -15,17 +15,17 @@ header {
 }
 
 .toolbar span {
-  font-family: "Roboto";
+  font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .toolbar img {
   width: 18px;
   height: 12px;
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline {
@@ -35,13 +35,12 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
-
   width: 375px;
 }
 
 .headline .title {
   color: #ff6b00;
-  font-family: "Crete Round";
+  font-family: Crete Round;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -57,7 +56,7 @@ header {
 }
 
 .headline p {
-  color: #ffffff;
+  color: #fff;
   font-family: "Poppins";
   font-weight: 400;
   font-size: 16px;
@@ -73,8 +72,7 @@ header {
 .socials img {
   width: 20px;
   height: 20px;
-
-  color: #ffffff;
+  color: #fff;
 }
 
 .headline .imagebg {
