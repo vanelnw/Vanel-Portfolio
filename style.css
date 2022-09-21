@@ -15,7 +15,7 @@ header {
 }
 
 .toolbar span {
-  font-family: Roboto;
+  font-family: Roboto, sans-serif;;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -40,7 +40,7 @@ header {
 
 .headline .title {
   color: #ff6b00;
-  font-family: Crete Round;
+  font-family: Crete-Round, sans-serif;;
   font-weight: 400;
   font-size: 56px;
   line-height: 64px;
@@ -49,7 +49,7 @@ header {
 
 .headline .sub-title {
   color: #fff5e1;
-  font-family: "Roboto";
+  font-family: Roboto, sans-serif;;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
@@ -57,7 +57,7 @@ header {
 
 .headline p {
   color: #fff;
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
