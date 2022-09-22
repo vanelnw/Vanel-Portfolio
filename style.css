@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+main {
+  width: 375px;
+}
+
 img {
   color: #fff;
   cursor: pointer;
@@ -89,4 +93,88 @@ header {
   gap: 20px;
   padding: 8px;
   list-style-type: none;
+}
+
+.works {
+  padding: 120px 24px;
+}
+
+.works .title span {
+  font-family: "Crete Round", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 52px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+hr {
+  margin-top: 24px;
+  margin-bottom: 80px;
+}
+
+.work-container {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 24px;
+}
+
+.work-container .hero-work img {
+  width: 327px;
+  height: 237px;
+  margin-bottom: 24px;
+}
+
+.work-container .hero-work span {
+  font-family: "Crete Round", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 44px;
+  color: #091e42;
+  margin-top: 24px;
+}
+
+.work-container .hero-work p {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #091e42;
+  margin: 12px 0;
+}
+
+.work-container .hero-work ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style-type: none;
+  gap: 12px;
+  padding: 12px 0;
+}
+
+.work-container .hero-work ul li {
+  padding: 10px 12px;
+  border: 1px solid #8993a4;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 12px;
+  background: #ff6b00;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
 }
