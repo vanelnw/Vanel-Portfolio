@@ -187,7 +187,7 @@ hr {
 
 .work-container .work-card {
   padding-top: 84px;
-  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%,rgba(38, 38, 38, 0.9) 61.94%);
+  background-color: linear-gradient(180.45deg,rgba(38, 38, 38, 0) 0.75%,rgba(38, 38, 38, 0.9) 61.94%);
   background-image: url(./assets/workimg.png);
 }
 
