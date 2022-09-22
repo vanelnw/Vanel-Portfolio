@@ -1,6 +1,6 @@
 # Microverse-project-1
 
-Description the project.
+This project is our first project in microverse. It is a first part in process of creating our portfolio website.
 
 Built With : html , css
 
