@@ -102,10 +102,9 @@ header {
 
 .works .title span {
   font-family: "Crete Round", sans-serif;
-  font-size: 40px;
   font-weight: 400;
+  font-size: 40px;
   line-height: 52px;
-  letter-spacing: 0em;
   text-align: left;
 }
 
@@ -188,12 +187,12 @@ hr {
 
 .work-container .work-card {
   padding-top: 84px;
-  background: linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0) 0.75%,
-      rgba(38, 38, 38, 0.9) 61.94%
-    ),
-    url(./assets/workimg.png);
+  background-color: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  );
+  background-image: url(./assets/workimg.png);
 }
 
 .work-container .work-card .title {
@@ -241,7 +240,6 @@ hr {
 
 .about {
   margin-top: 120px;
-  /* padding: 120px 24px; */
   background: #1c1a19;
 }
 
