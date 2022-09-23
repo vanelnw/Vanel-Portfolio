@@ -34,7 +34,7 @@ header {
   padding: 0 24px;
 }
 
-.toolbar span a {
+.toolbar a {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -256,7 +256,6 @@ button:hover {
 .about {
   display: flex;
   flex-direction: column;
-  margin-top: 120px;
   background: #1c1a19;
 }
 
