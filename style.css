@@ -124,10 +124,12 @@ hr {
   grid-template-columns: auto;
   gap: 24px;
 }
+
 .work-container .hero-work {
   display: flex;
   flex-direction: column;
 }
+
 .work-container .hero-work img {
   width: 327px;
   height: 237px;
