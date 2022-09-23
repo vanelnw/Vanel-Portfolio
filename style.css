@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+}
+
 main {
   width: 375px;
   margin: auto;
@@ -97,10 +101,12 @@ header {
 }
 
 .works {
+  display: flex;
+  flex-direction: column;
   padding: 120px 24px;
 }
 
-.works .title span {
+.works .title h2 {
   font-family: "Crete Round", sans-serif;
   font-weight: 400;
   font-size: 40px;
@@ -118,14 +124,17 @@ hr {
   grid-template-columns: auto;
   gap: 24px;
 }
-
+.work-container .hero-work {
+  display: flex;
+  flex-direction: column;
+}
 .work-container .hero-work img {
   width: 327px;
   height: 237px;
   margin-bottom: 24px;
 }
 
-.work-container .hero-work span {
+.work-container .hero-work h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -164,7 +173,7 @@ hr {
   color: #091e42;
 }
 
-.button {
+button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -178,14 +187,23 @@ hr {
   font-size: 17px;
   line-height: 24px;
   cursor: pointer;
+  border: none;
 }
 
-.work-container .hero-work .button {
+button:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.work-container .hero-work button {
   width: 124px;
   height: 48px;
 }
 
 .work-container .work-card {
+  display: flex;
+  flex-direction: column;
   padding-top: 84px;
   background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   background-image: url(./assets/workimg.png);
@@ -213,7 +231,6 @@ hr {
 
 .work-container .work-card ul {
   display: flex;
-  list-style-type: none;
   gap: 12px;
   margin-bottom: 22px;
   margin-left: 16px;
@@ -235,11 +252,15 @@ hr {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
   margin-top: 120px;
   background: #1c1a19;
 }
 
 .about .top {
+  display: flex;
+  flex-direction: column;
   padding-top: 120px;
   padding-bottom: 209px;
   background-image: url(./assets/aboutbg.png);
@@ -252,7 +273,7 @@ hr {
   margin: 0 24px;
 }
 
-.about .top span {
+.about .top h2 {
   font-family: "Crete Round", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -272,17 +293,20 @@ hr {
   margin: 24px;
 }
 
-.about .top .button {
+.about .top button {
   width: 161px;
 }
 
 .about .bottom {
+  padding-top: 136px;
+  padding-bottom: 99px;
+}
+
+.about .bottom ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 90px;
-  padding-top: 136px;
 }
 
 .language,
@@ -300,17 +324,16 @@ hr {
   color: #fff;
 }
 
-.about .bottom ul {
+.about .bottom ul li ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 32px;
-  list-style-type: none;
   margin: 44px 0;
 }
 
-.about .bottom ul li {
+.about .bottom ul li ul li {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 400;
