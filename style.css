@@ -389,11 +389,12 @@ button:hover {
 .contact .contact-icons {
   border-top: 1px solid #dfe1e6;
   background: #fff;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
-.contact .contact-icons ul {
+.contact .contact-icons .contact-icons-container {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 20px;
 }
