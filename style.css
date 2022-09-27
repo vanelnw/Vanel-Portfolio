@@ -201,6 +201,10 @@ button:hover {
   color: #f55800;
 }
 
+button:enabled{
+  background: #F55800;
+}
+
 .work-container .hero-work button {
   width: 124px;
   height: 48px;
@@ -397,4 +401,3 @@ button:hover {
   justify-content: center;
   gap: 20px;
 }
-
