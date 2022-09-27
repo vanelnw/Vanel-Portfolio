@@ -352,7 +352,7 @@ button:hover {
   border-bottom: 1px solid #dfe1e6;
 }
 
-.contact h2 {
+.contact .contact-form h2 {
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -363,7 +363,7 @@ button:hover {
   margin-bottom: 59px;
 }
 
-.contact form {
+.contact .contact-form form {
   display: flex;
   flex-direction: column;
   align-items: center;
