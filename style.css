@@ -13,7 +13,7 @@ ul {
 }
 
 main {
-  width: 375px;
+  /* width: 375px; */
   margin: auto;
 }
 
@@ -29,7 +29,7 @@ header {
 
 .toolbar {
   background-color: #3c3a39;
-  width: 375px;
+  /* width: 375px; */
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -50,6 +50,27 @@ header {
 .toolbar img {
   width: 18px;
   height: 12px;
+}
+
+.toolbar .menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar i {
+    display: none;
+  }
+
+  .toolbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .toolbar .menu ul {
+    display: flex;
+    gap: 12px;
+  }
 }
 
 .headline {
@@ -210,7 +231,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 84px;
-  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  background-color: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0) 0.75%,
+    rgba(38, 38, 38, 0.9) 61.94%
+  );
   background-image: url(./assets/workimg.png);
 }
 
