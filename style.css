@@ -268,12 +268,12 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 84px;
-  background-color: 
+  background-color:
     linear-gradient(
-      180.45deg, 
-    rgba(38, 38, 38, 0%) 0.75%, 
-    rgba(38, 38, 38, 90%) 61.94%
-  );
+      180.45deg,
+      rgba(38, 38, 38, 0%) 0.75%,
+      rgba(38, 38, 38, 90%) 61.94%
+    );
   background-image: url("./assets/workimg.png");
 }
 
@@ -312,7 +312,7 @@ button:hover {
   line-height: 20px;
   color: #fff;
   padding: 10px 12px;
-  background:rgba(255, 255, 255, 24%);
+  background: rgba(255, 255, 255, 24%);
 }
 
 .work-container .work-card button {
