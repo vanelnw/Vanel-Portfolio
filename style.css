@@ -5,7 +5,7 @@
 }
 
 body {
-  background: #e5e5e5;
+  background: #fff;
 }
 
 ul {
@@ -13,7 +13,6 @@ ul {
 }
 
 main {
-  width: 375px;
   margin: auto;
 }
 
@@ -29,7 +28,6 @@ header {
 
 .toolbar {
   background-color: #3c3a39;
-  width: 375px;
   height: 48px;
   display: flex;
   justify-content: space-between;
@@ -38,7 +36,7 @@ header {
 }
 
 .toolbar a {
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -52,10 +50,44 @@ header {
   height: 12px;
 }
 
+.toolbar .menu {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar {
+    padding: 0 100px;
+    height: 72px;
+  }
+
+  .toolbar i {
+    display: none;
+  }
+
+  .toolbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .toolbar .menu ul {
+    display: flex;
+    gap: 12px;
+  }
+
+  .toolbar .menu ul li a {
+    font-family: Inter, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+}
+
 .headline {
   position: relative;
   background-color: black;
-  background-image: url(./assets/imagebg.png);
+  background-image: url("./assets/imagebg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 150px 260px;
@@ -63,10 +95,10 @@ header {
   flex-direction: column;
   align-items: flex-start;
   padding: 120px 24px;
-  width: 375px;
+  height: 100vh;
 }
 
-.headline .title {
+.headline .infos .title {
   color: #ff6b00;
   font-family: "Crete Round", sans-serif;
   font-style: normal;
@@ -76,9 +108,9 @@ header {
   letter-spacing: 0.37px;
 }
 
-.headline .sub-title {
+.headline .infos .sub-title {
   color: #fff5e1;
-  font-family: "Roboto", sans-serif;
+  font-family: Roboto, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -86,9 +118,9 @@ header {
   margin: 12px 0;
 }
 
-.headline p {
+.headline .infos p {
   color: #fff;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -101,6 +133,43 @@ header {
   gap: 20px;
   padding: 8px;
   list-style-type: none;
+}
+
+@media screen and (min-width: 768px) {
+  .headline {
+    background-image: url("./assets/Illustration-header.png");
+    background-position: right top;
+    background-size: 400px 100%;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+  }
+
+  .headline p {
+    max-width: 400px;
+  }
+
+  .headline .infos {
+    order: 2;
+  }
+
+  .headline .socials {
+    order: 1;
+  }
+
+  .headline .socials ul {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 820px) {
+  .headline {
+    gap: 85px;
+  }
+
+  .headline p {
+    max-width: 450px;
+  }
 }
 
 .works {
@@ -125,7 +194,7 @@ hr {
 .work-container {
   display: grid;
   grid-template-columns: auto;
-  gap: 24px;
+  grid-gap: 24px;
 }
 
 .work-container .hero-work {
@@ -146,11 +215,10 @@ hr {
   font-size: 32px;
   line-height: 44px;
   color: #091e42;
-  margin-top: 24px;
 }
 
 .work-container .hero-work p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -170,7 +238,7 @@ hr {
 .work-container .hero-work ul li {
   padding: 10px 12px;
   border: 1px solid #8993a4;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -186,7 +254,7 @@ button {
   padding: 12px;
   background: #ff6b00;
   color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -210,8 +278,13 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 84px;
-  background-color: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
-  background-image: url(./assets/workimg.png);
+  background-color:
+    linear-gradient(
+      180.45deg,
+      rgba(38, 38, 38, 0%) 0.75%,
+      rgba(38, 38, 38, 90%) 61.94%
+    );
+  background-image: url("./assets/workimg.png");
 }
 
 .work-container .work-card .title {
@@ -225,7 +298,7 @@ button:hover {
 }
 
 .work-container .work-card p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -242,18 +315,72 @@ button:hover {
 }
 
 .work-container .work-card ul li {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #fff;
   padding: 10px 12px;
-  background: rgba(255, 255, 255, 0.24);
+  background: rgba(255, 255, 255, 24%);
 }
 
 .work-container .work-card button {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .works {
+    padding: 20px;
+  }
+
+  .works .title h2 {
+    float: left;
+    margin-right: 24px;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 12px;
+  }
+
+  .work-container .hero-work {
+    display: block;
+    grid-column: 1 / 3;
+  }
+
+  .work-container .hero-work img {
+    float: left;
+    height: 330px;
+    margin-right: 24px;
+  }
+}
+
+@media (min-width: 820px) {
+  .works {
+    padding: 50px;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 12px;
+  }
+
+  .work-container .hero-work {
+    display: block;
+    grid-column: 1 / 4;
+  }
+
+  .work-container .hero-work img {
+    float: left;
+    width: 60%;
+    height: 448px;
+    margin-right: 24px;
+  }
+
+  .work-container .work-card {
+    padding-top: 50px;
+  }
 }
 
 .about {
@@ -267,7 +394,7 @@ button:hover {
   flex-direction: column;
   padding-top: 120px;
   padding-bottom: 209px;
-  background-image: url(./assets/aboutbg.png);
+  background-image: url("./assets/aboutbg.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: 150px 260px;
@@ -288,7 +415,7 @@ button:hover {
 }
 
 .about .top p {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -320,7 +447,7 @@ button:hover {
   justify-content: flex-start;
   align-items: center;
   gap: 12px;
-  font-family: "InaiMathi", sans-serif;
+  font-family: InaiMathi, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -338,12 +465,51 @@ button:hover {
 }
 
 .about .bottom ul li ul li {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 22px;
   line-height: 43px;
   color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .about .top {
+    background-image: url("./assets/aboutBackground.png");
+    background-position: right 100px;
+    background-size: 400px 300px;
+    padding-left: 10px;
+  }
+
+  .about .top p {
+    max-width: 350px;
+  }
+
+  .about hr {
+    margin: 0 50px;
+  }
+
+  .about .bottom {
+    padding: 50px;
+  }
+
+  .about .bottom ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 100px;
+  }
+}
+
+@media (min-width: 820px) {
+  .about .top {
+    padding-left: 50px;
+  }
+
+  .about .top p {
+    max-width: 400px;
+  }
 }
 
 .contact .contact-form {
@@ -353,7 +519,7 @@ button:hover {
 }
 
 .contact .contact-form h2 {
-  font-family: "Inter", sans-serif;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -397,4 +563,22 @@ button:hover {
   justify-content: center;
   align-items: center;
   gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact .contact-form {
+    display: flex;
+    gap: 40px;
+    padding: 70px;
+  }
+
+  .contact .contact-form form {
+    width: 100%;
+    align-items: start;
+  }
+
+  .contact .contact-form h2 {
+    max-width: 300px;
+    text-align: left;
+  }
 }
