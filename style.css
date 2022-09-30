@@ -206,6 +206,11 @@ hr {
   width: 327px;
   height: 237px;
   margin-bottom: 24px;
+  transition: transform 1s;
+}
+
+.work-container .hero-work img:hover {
+  transform: scale(1.1);
 }
 
 .work-container .hero-work h2 {
@@ -279,12 +284,11 @@ button:hover {
   display: flex;
   flex-direction: column;
   padding-top: 84px;
-  background-color:
-    linear-gradient(
-      180.45deg,
-      rgba(38, 38, 38, 0%) 0.75%,
-      rgba(38, 38, 38, 90%) 61.94%
-    );
+  background-color: linear-gradient(
+    180.45deg,
+    rgba(38, 38, 38, 0%) 0.75%,
+    rgba(38, 38, 38, 90%) 61.94%
+  );
   background-image: url("./assets/workimg.png");
 }
 
