@@ -206,6 +206,11 @@ hr {
   width: 327px;
   height: 237px;
   margin-bottom: 24px;
+  transition: transform 1s;
+}
+
+.work-container .hero-work img:hover {
+  transform: scale(1.1);
 }
 
 .work-container .hero-work h2 {
@@ -261,7 +266,7 @@ button {
   line-height: 24px;
   cursor: pointer;
   border: none;
-  transition: all 1s;
+  transition: all 0.8s;
 }
 
 button:hover {
