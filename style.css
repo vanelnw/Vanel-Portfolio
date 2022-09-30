@@ -261,6 +261,7 @@ button {
   line-height: 24px;
   cursor: pointer;
   border: none;
+  transition: all 1s;
 }
 
 button:hover {
